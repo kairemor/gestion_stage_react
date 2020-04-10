@@ -88,6 +88,7 @@ class RegistrationForm extends React.Component {
             );
 
             this.setState({ sended: true });
+            this.props.history.push('/dashboard/project/all')
 
           })
           .catch(err => console.log(err));

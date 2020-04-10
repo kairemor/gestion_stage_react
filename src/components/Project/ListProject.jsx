@@ -106,7 +106,7 @@ function ListProject(props) {
                         </CardTitle>
                         <CardText>
                           {project.description.substring(0, 50)}...
-                  </CardText>
+                        </CardText>
                       </Card>
                     </Link>
                     {
@@ -115,13 +115,12 @@ function ListProject(props) {
                           value={[
                             project.id,
                             project.name,
-
                           ]}
                           className="btn btn-danger"
                           onClick={showConfirmDelete}
                         >
                           Supprimer
-                    </Button>
+                        </Button>
                       ) : ('')
                     }
                   </Col>
